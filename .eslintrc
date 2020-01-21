@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "extends": "airbnb",
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jquery": true,
+    "jest": true
+  },
+  "rules": {
+    "react/no-did-mount-set-state": 0,
+    "arrow-body-style": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "react/prefer-stateless-function": 0,
+    "import/prefer-default-export": 0,
+    "import/no-cycle": 0,
+    "max-lines": "warn",
+    "no-console": "error",
+    "react/destructuring-assignment": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "react/no-access-state-in-setstate": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "no-template-curly-in-string": 0,
+    "lines-between-class-members": 1
+  }
+}
