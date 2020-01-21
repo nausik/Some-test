@@ -1,0 +1,35 @@
+.item {
+    border: 1px dotted black;
+    padding: 10px;
+    width: fit-content;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+}
+
+.item__title {
+    font-weight: bold;
+}
+
+.item__image img {
+    max-width: 150px;
+    height: 150px;
+}
+@media all and (max-width: 1280px) { 
+    .item__image img {
+        width: 130px;
+        height: 130px;
+    }
+} 
+@media all and (max-width: 991px) { 
+    .item__image img {
+        width: 150px;
+        height: 150px;
+    }
+} 
+@media all and (max-width: 767px) { 
+    .item__image img {
+        width: 100px;
+        height: 100px;
+    }
+}

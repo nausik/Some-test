@@ -1,0 +1,38 @@
+.list__filter {
+    width: 200px;
+}
+
+.list__filter input[type="text"] {
+    width: 100%;
+}
+
+.list__content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.list__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+@media all and (max-width: 991px) { 
+    .list__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+} 
+@media all and (max-width: 767px) { 
+    .list__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+} 
