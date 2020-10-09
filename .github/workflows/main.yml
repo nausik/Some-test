@@ -26,7 +26,7 @@ jobs:
       working-directory: ./coverage
       run: |
         sed -i 's/\/home\/runner\/work\/Some-test\/Some-test\//\/github\/workspace\//g' lcov.info
-        sed -i 's/\/home\/runner\/work\/Some-test\/Some-test\//\/github\/workspace\//g' sonar-cloud-reporter.xml
+        sed -i 's/\/home\/runner\/work\/Some-test\/Some-test\//\/github\/workspace\//g' test-report.xml
     - name: Archive code coverage results
       uses: actions/upload-artifact@v2
       with:
