@@ -14,7 +14,6 @@ describe('<FullItem/>', () => {
     );
 
     expect(wrapper.find('FullItem')).toHaveLength(1);
-    expect(wrapper.text()).toContain('TestPrice: $25');
     expect(wrapper.text()).toContain('Description: yo');
   });
 
