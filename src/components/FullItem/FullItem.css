@@ -2,3 +2,11 @@
     width: 200px;
     height: 200px;
 }
+
+.full-item:hoverr {
+    color: black;
+}
+
+ul list {
+    background: black;
+}
