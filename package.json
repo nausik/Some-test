@@ -35,7 +35,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:ci": "react-scripts test  --env=jsdom --ci --coverage --reporters=default --reporters=jest-junit",
+    "test:ci": "react-scripts test  --env=jsdom --ci --coverage --reporters=default --reporters=jest-sonar-reported",
     "test:coverage": "npm run test -- --coverage",
     "eject": "react-scripts eject",
     "lint": "eslint ."
