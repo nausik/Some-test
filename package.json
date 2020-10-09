@@ -4,10 +4,7 @@
   "private": true,
   "dependencies": {
     "connected-react-router": "^6.6.1",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.5",
     "history": "^4.10.1",
-    "jest-enzyme": "^7.1.2",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-device-detect": "^1.11.14",
@@ -29,13 +26,28 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
-    "eslint-watch": "2.1.14"
+    "eslint-watch": "2.1.14",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "jest-enzyme": "^7.1.2",
+    "jest-sonar-reporter": "^2.0.0"
+  },
+  "jest": {
+    "coverageReporters": [
+      "text",
+      "jest-sonar-reporter"
+    ]
+  },
+  "jestSonar": {
+    "reportPath": "reports",
+    "reportFile": "test-report.xml",
+    "indent": 4
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:ci": "react-scripts test  --env=jsdom --ci --coverage --reporters=default --reporters=jest-sonar-reported",
+    "test:ci": "react-scripts test  --env=jsdom --ci --coverage --testResultsProcessor jest-sonar-reporter",
     "test:coverage": "npm run test -- --coverage",
     "eject": "react-scripts eject",
     "lint": "eslint ."
