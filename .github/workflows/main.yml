@@ -22,11 +22,16 @@ jobs:
       run:  sudo npm install -g jest
     - name: Run Tests
       run:  npm run test:ci
+    - name: fix code coverage paths
+      working-directory: ./coverage
+      run: |
+        sed -i 's/\/home\/runner\/work\/Some-test\/Some-test\//\/github\/workspace\//g' lcov.info
+        sed -i 's/\/home\/runner\/work\/Some-test\/Some-test\//\/github\/workspace\//g' sonar-cloud-reporter.xml
     - name: Archive code coverage results
       uses: actions/upload-artifact@v2
       with:
         name: code-coverage-report
-        path: coverage/lcov-report/src/Layout.js.html
+        path: reports/test-report.xml
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       env:
