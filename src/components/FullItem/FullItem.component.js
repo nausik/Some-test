@@ -25,6 +25,15 @@ const FullItem = ({
           <div className="list-item__description">
             Description: {description}
           </div>
+          <div className="list-item__description">
+            Description: {description}
+          </div>
+          <div className="list-item__description">
+            Description: {description}
+          </div>
+          <div className="list-item__description">
+            Description: {description}
+          </div>
         </React.Fragment>
       )
         : <div>Nothing to see here</div>
