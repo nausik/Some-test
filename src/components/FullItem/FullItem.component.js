@@ -10,10 +10,6 @@ const FullItem = ({
   description,
   showComponent = true,
 }) => {
-  const a = `Test${price}`;
-  const c = `Test${price}`;
-  const d = `Test${price}`;
-  const e = `Test${price}`;
   return (
     <div className="full-item">
       {showComponent ? (
