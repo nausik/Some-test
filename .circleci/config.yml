@@ -3,7 +3,7 @@ orbs:
   node: circleci/node@3.0.0
   sonarcloud: sonarsource/sonarcloud@1.0.2
 jobs:
-  coverage:
+  test:
     steps:
       - checkout
       - run: npm install
