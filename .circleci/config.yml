@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 orbs:
   node: circleci/node@3.0.0
   sonarcloud: sonarsource/sonarcloud@1.0.2
