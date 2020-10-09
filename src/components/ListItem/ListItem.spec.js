@@ -5,8 +5,7 @@ import ListItem from './ListItem.component';
 describe('<ListItem/>', () => {
   it('should render properly', () => {
     const wrapper = mount(
-      <ListItem
-        name="Test"
+      <ListItem name="Test"
         image="123"
         price={25}
       />,
