@@ -12,6 +12,8 @@ describe('<FullItem/>', () => {
         description="yo"
       />,
     );
-    expect(wrapper.find('Projects')).toHaveLength(0);
+
+    expect(wrapper.find('FullItem')).toHaveLength(1);
+    expect(wrapper.text()).toContain('TestPrice: $25');
   });
 });
