@@ -9,7 +9,7 @@ workflows:
         - checkout
         - run: npm install
         - run:
-          name: "Run Jest and Collect Coverage Reports"
-          command: jest --collectCoverage=true
+            name: "Run Jest and Collect Coverage Reports"
+            command: jest --collectCoverage=true
         - store_artifacts:
           path: coverage
